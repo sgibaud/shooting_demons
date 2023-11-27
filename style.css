@@ -1,0 +1,165 @@
+@import url("https://use.typekit.net/tub3imu.css");
+
+:root {
+	--screen: 2560px;
+	--size_svg: 10em;
+	--size: 2em;
+	--border: calc(0.6*var(--size));
+	--shadow: rgb(110, 3, 3);
+	--transparent: rgba(243, 234, 234, 0.15);
+	--btn_color_hover: rgb(135, 0, 0);
+	--btn_color: rgb(205, 96, 96);
+	--text_color1: rgb(243, 234, 234);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: ds-stereo-mild, sans-serif;
+}
+
+body {
+	display: flex;
+}
+
+body {
+	background-image: url('image/Plan\ de\ travail\ 22@300.webp');
+	background-repeat: no-repeat;
+	background-position: top;
+	flex-direction: column;
+}
+
+section {
+	width: 100vw;
+}
+
+#section2 {
+	display: flex;
+	justify-content: center;
+	animation: devil 4s ease-in-out;
+}
+
+button.home_btn {
+	padding: calc(0.25*var(--size));
+	width: calc(3*var(--size));
+	background-color: var(--btn_color);
+	border: 0;
+	color: var(--text_color1);
+	border-radius: var(--size);
+	cursor: pointer;
+	margin-top: calc(0.5*var(--size));
+}
+
+button.home_btn:hover {
+	background-color: var(--btn_color_hover);
+}
+
+#devil {
+	width: calc(4*var(--size_svg));
+	margin-top: calc(6*var(--size));
+}
+
+div.home {
+	position: absolute;
+	width: calc(11*var(--size));
+	text-align: center;
+	background-color: white;
+	padding: calc(0.25*var(--size));
+	border-radius: var(--border);
+	box-shadow: 0 0 calc(2*var(--size)) calc(0.25*var(--size)) var(--shadow);
+	top: calc(3*var(--size));
+	flex-direction: column;
+}
+
+p {
+	font-size: calc(0.85*var(--size));
+}
+
+/* CSS pour l'application en l'état */
+#sec1 {
+	margin-top: var(--size);
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.hidden2 {
+	visibility: hidden;
+}
+
+.hidden3 {
+	display: none !important;
+}
+
+.visible {
+	visibility: visible !important;
+}
+
+#container {
+	margin: 0 auto;
+	height: calc(20*var(--size));
+	width: calc(45*var(--size));
+	cursor: crosshair;
+	padding: var(--size);
+	overflow: hidden;
+	box-shadow: 0 0 calc(1.25*var(--size)) calc(0.25*var(--size)) var(--shadow);
+}
+
+#target {
+	height: calc(3.5*var(--size));
+	width: calc(3.5*var(--size));
+	cursor: pointer;
+	position: relative;
+}
+
+.target {
+	animation: devil 1.5s ease-out infinite;
+}
+
+button.start {
+	padding: calc(0.25*var(--size));
+	width: calc(3*var(--size));
+	background-color: var(--btn_color);
+	border: 0;
+	color: var(--text_color1);
+	border-radius: var(--size);
+	cursor: pointer;
+	margin: 0 48%;
+}
+
+button.start:hover {
+	background-color: var(--btn_color_hover);
+
+}
+
+.scoreFinal {
+	margin: auto;
+	color: var(--text_color1);
+	width: calc(4*var(--size));
+	background-color: var(--btn_color);
+	padding: calc(0.5*var(--size));
+	text-align: center;
+	border-radius: calc(0.25*var(--size));
+}
+
+.game-info {
+	color: var(--text_color1);
+	display: flex;
+	justify-content: center;
+	margin: var(--size) 0;
+}
+
+.score, .time {
+	color: var(--text_color1);
+}
+
+@keyframes devil {
+	0% {
+		transform: scale(0);
+	}
+	100%
+	{
+		transform: scale(1);
+	}
+}

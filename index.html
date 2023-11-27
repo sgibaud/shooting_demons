@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chasse aux démons</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<section id="section2">
+		<img id="devil" src="image/devil_color@300.svg">
+		<div class="home">
+			<p>
+			Bienvenue !<br>
+			Es-tu prêt à chasser mes petits démons ?</p>
+			<button id="hidden" class='home_btn' value="start">GO</button>
+		</div>
+	</section>
+
+	<section id="sec1" class="hidden">
+		<div class="game">
+			<button class="start">Start / Restart</button>
+			<div class="game-info hidden">
+				<p> <span class="score">Score : </span><span class="time">Temps :</span></p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div id="container" class="hidden">
+			<img src="image/devil_blu@300.svg" id="target" class="target hidden2" alt="">
+			<p id="result"></p>
+		</div>
+	</section>
+
+</body>
+
+</html>
